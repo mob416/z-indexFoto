@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Порядок карт</title>
+
+    <style type="text/css">
+        .card img { position: relative; }
+
+        .one   {                          z-index: 1; }
+        .two   { left: -120px; top: 25px; z-index: 2; }
+        .three { left: -240px; top: 50px; z-index: 3; }
+
+        .card img:hover { z-index: 10; }
+    </style>
+
+    <style type="text/css">
+        .fig {
+            float: right;                   /* Выравнивание рисунка по левому краю */
+            background: #e69f73;            /* Цвет фона */
+
+            padding-top:    0px;
+            padding-right:  0px;
+            padding-bottom: 0px;
+            padding-left:   0px;                   /* Поля вокруг картинки */
+
+            margin-top:     0px;
+            margin-right:   0px;
+            margin-bottom:  0px;
+            margin-left:    0px;           /* Отступы */
+
+            width: 100px;
+        }
+    </style>
+
+    <style type="text/css">
+        .blockCarton
+        {
+            /*float: right;*/                   /* Выравнивание рисунка по левому краю */
+            background: yellow;                 /* Цвет фона */
+
+            padding-top:    0px;
+            padding-right:  0px;
+            padding-bottom: 0px;
+            padding-left:   0px;                /* Поля вокруг картинки */
+
+            margin-top:     200px;
+            margin-right:   0px;
+            margin-bottom: 400px;
+            margin-left:    50px;               /* Отступы */
+
+            width:  300px;
+            height: 300px;
+        }
+    </style>
+
+</head>
+<body>
+
+<p class="card">
+    <img src="foto1.jpg"  class="one">
+    <img src="foto2.jpg"  class="two">
+    <img src="foto3.jpg"  class="three">
+</p>
+
+<div class="blockCarton">
+    <img src="vinni.png" class="fig" >
+
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+    sed diem nonummy nibh euismod tincidunt ut lacreet dolore
+    magna aliguam erat volutpat. Ut wisis enim ad minim veniam,
+    quis nostrud exerci tution ullamcorper suscipit lobortis nisl
+    ut aliquip ex ea commodo consequat.
+</div>
+
+</body>
+</html>
+
+<!--
+Свойство z-index работает только для элементов, у которых
+значение position задано как relative.
+absolute, fixed вроде не работают
+-->
+
